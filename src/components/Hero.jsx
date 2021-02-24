@@ -1,4 +1,5 @@
 import shadow from "../assets/images/grad.png";
+import character from "../assets/images/pubg-character.png";
 
 const Hero = () => {
   return (
@@ -11,7 +12,13 @@ const Hero = () => {
               <p className="tba">TBA</p>
             </div>
           </div>
-          <div className="hero-graphic"></div>
+          <div className="hero-graphic">
+            <h2>ZEMESTAGAME</h2>
+            <h1>PUBGM</h1>
+            <img src={character} alt="" />
+            <h2>CHAMPIONSHIP</h2>
+          </div>
+          <div className="circle"></div>
         </div>
         <img src={shadow} alt="" />
       </div>
