@@ -1,12 +1,42 @@
 @media (min-width: 500px) {
 }
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
+  .navbar {
+    padding: 1.5em 2.5em;
+
+    .container {
+      width: 100%;
+
+      img {
+        max-width: 2.5em;
+      }
+
+      .mobile-menu {
+        font-size: 2.5em;
+      }
+    }
+  }
+
+  .hero {
+    height: 100vh;
+
+    .container {
+      .event {
+        h1 {
+          font-size: 10vw;
+        }
+
+        h2 {
+          font-size: 3vw;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 1280px) {
 }
-
 // Landscape
 @media (max-height: 580px) {
 }
