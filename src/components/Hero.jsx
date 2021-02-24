@@ -1,5 +1,5 @@
-import shadow from "../assets/images/grad.png";
-import character from "../assets/images/pubg-character.png";
+// import shadow from "../assets/images/grad.png";
+// import character from "../assets/images/pubg-character.png";
 
 const Hero = () => {
   return (
@@ -13,7 +13,7 @@ const Hero = () => {
           <h2>CHAMPIONSHIP</h2>
         </div>
       </div>
-      <img src={shadow} alt="" />
+      {/* <img src={shadow} alt="" /> */}
     </div>
   );
 };
