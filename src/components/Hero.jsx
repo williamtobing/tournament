@@ -13,6 +13,7 @@ const Hero = () => {
           <h2>CHAMPIONSHIP</h2>
         </div>
       </div>
+      <img src={shadow} alt="" />
     </div>
   );
 };

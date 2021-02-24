@@ -67,6 +67,13 @@ a:active {
   background-position: center;
   height: 100vh;
 
+  img {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+
   .container {
     .event {
       font-family: "Archivo Black";
