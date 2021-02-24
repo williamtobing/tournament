@@ -1,9 +1,13 @@
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+
 import "./scss/main.scss";
 
 function App() {
   return (
     <>
-      <h1>Tournament</h1>
+      <Navbar />
+      <Hero />
     </>
   );
 }
