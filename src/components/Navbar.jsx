@@ -10,9 +10,7 @@ const Navbar = () => {
           <img src={logo} alt="" />
         </a>
 
-        <a className="mobile-menu" href="/">
-          <IoIosMenu />
-        </a>
+        <IoIosMenu className="mobile-menu" />
 
         <nav></nav>
       </div>

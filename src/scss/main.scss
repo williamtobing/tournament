@@ -2,6 +2,8 @@
 @import "config";
 @import "media";
 
+/* MOBILE FIRST */
+
 * {
   margin: 0;
   padding: 0;
@@ -24,7 +26,7 @@ a:active {
 }
 
 .navbar {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(0, 0, 0, 0);
   padding: 1em;
   position: fixed;
   z-index: 999;
@@ -32,8 +34,10 @@ a:active {
   box-sizing: border-box;
 
   .container {
+    width: 90%;
     display: flex;
-    place-content: space-between;
+    justify-content: space-between;
+    margin: 0 auto;
 
     img {
       max-width: 1.5em;
@@ -41,10 +45,22 @@ a:active {
 
     .mobile-menu {
       font-size: 1.7rem;
+      margin: auto 0;
+      user-select: none;
+      cursor: pointer;
     }
 
     nav {
       display: none;
     }
   }
+}
+
+.hero {
+  background-image: url("../assets/images/bg-image.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 100vh;
+  color: $light-color;
 }
