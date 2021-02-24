@@ -13,10 +13,12 @@ const Hero = () => {
             </div>
           </div>
           <div className="hero-graphic">
-            <h2>ZEMESTAGAME</h2>
-            <h1>PUBGM</h1>
-            <img src={character} alt="" />
-            <h2>CHAMPIONSHIP</h2>
+            <div className="content">
+              <h2>ZEMESTAGAME</h2>
+              <h1>PUBGM</h1>
+              <img src={character} alt="" />
+              <h2 className="end">CHAMPIONSHIP</h2>
+            </div>
           </div>
           <div className="circle"></div>
         </div>
