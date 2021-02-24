@@ -30,7 +30,7 @@ ul {
 }
 
 .container {
-  width: 90%;
+  width: 95%;
 }
 
 .navbar {
@@ -115,6 +115,7 @@ ul {
   background-size: cover;
   background-position: center;
   height: 80vh;
+  overflow: hidden;
 
   img {
     position: absolute;
@@ -123,13 +124,23 @@ ul {
     left: 0;
   }
 
+  img.character {
+    z-index: 1;
+    width: 110%;
+  }
+
+  img.shadow {
+    z-index: 2;
+  }
+
   .container {
     .event {
       font-family: "Archivo Black";
       position: absolute;
-      top: 50%;
+      top: 30%;
       left: 50%;
       transform: translate(-50%, -50%);
+      z-index: 3;
 
       h1 {
         font-size: 20vw;

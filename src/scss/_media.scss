@@ -1,4 +1,4 @@
-@media (min-width: 425px) {
+@media (min-width: 400px) {
   .navbar {
     .container {
       img {
@@ -7,6 +7,20 @@
 
       .mobile-menu {
         font-size: 2em;
+      }
+    }
+  }
+
+  .hero {
+    img.character {
+      width: 50%;
+      right: 0;
+      left: auto;
+    }
+
+    .container {
+      .event {
+        top: 50%;
       }
     }
   }
@@ -53,6 +67,12 @@
 
   .hero {
     height: 100vh;
+
+    img.character {
+      width: 50%;
+      right: -100px;
+      left: auto;
+    }
 
     .container {
       .event {
