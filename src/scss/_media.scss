@@ -1,4 +1,15 @@
-@media (min-width: 500px) {
+@media (min-width: 425px) {
+  .navbar {
+    .container {
+      img {
+        max-width: 2em;
+      }
+
+      .mobile-menu {
+        font-size: 2em;
+      }
+    }
+  }
 }
 
 @media (min-width: 700px) {
@@ -12,8 +23,30 @@
         max-width: 2.5em;
       }
 
-      .mobile-menu {
-        font-size: 2.5em;
+      .mobile-menu,
+      .mobile-menu-exit {
+        display: none;
+      }
+
+      nav {
+        display: flex;
+        justify-content: flex-end;
+        background: none;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+
+        ul {
+          margin: 0;
+          display: flex;
+        }
+
+        li {
+          a {
+            padding: 0 0 0 2em;
+          }
+        }
       }
     }
   }

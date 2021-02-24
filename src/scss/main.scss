@@ -59,6 +59,8 @@ ul {
     .mobile-menu-exit {
       float: right;
       font-size: 3em;
+      margin-top: -0.1em;
+      margin-right: 0.1em;
       user-select: none;
       cursor: pointer;
     }
@@ -81,7 +83,7 @@ ul {
         a {
           color: white;
           display: block;
-          padding: 0.5em;
+          padding: 1em;
           font-size: 1.3em;
           text-align: right;
           transition-duration: 0.3s;

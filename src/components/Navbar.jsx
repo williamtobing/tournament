@@ -7,11 +7,15 @@ const Navbar = () => {
   const nav = useSelector((state) => state.nav);
   const dispatch = useDispatch();
 
-  const showNavbar = () => {
+  const showNavbar = (e) => {
+    e.preventDefault();
+
     dispatch(showNav());
   };
 
-  const hideNavbar = () => {
+  const hideNavbar = (e) => {
+    e.preventDefault();
+
     dispatch(hideNav());
   };
 
@@ -29,10 +33,14 @@ const Navbar = () => {
 
           <ul>
             <li>
-              <a href="/">HOME</a>
+              <a href="/" onClick={hideNavbar}>
+                HOME
+              </a>
             </li>
             <li>
-              <a href="/">CONTEST</a>
+              <a href="/" onClick={hideNavbar}>
+                CONTEST
+              </a>
             </li>
           </ul>
         </nav>
