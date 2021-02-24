@@ -1,5 +1,9 @@
 import { combineReducers } from "redux";
 
-const allReducers = combineReducers({});
+import { navButtonReducer } from "./navButton";
+
+const allReducers = combineReducers({
+  nav: navButtonReducer,
+});
 
 export default allReducers;

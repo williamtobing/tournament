@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-
-:root {
-  --primary-bg: black;
-}
+@import "config";
+@import "media";
 
 * {
   margin: 0;
@@ -11,10 +9,42 @@
 }
 
 body {
-  background-color: var(--primary-bg);
-  font-family: "Roboto";
+  background-color: $main-bg;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  color: $light-color;
 }
 
-h1 {
-  color: red;
+a,
+a:link,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+.navbar {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 1em;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  box-sizing: border-box;
+
+  .container {
+    display: flex;
+    place-content: space-between;
+
+    img {
+      max-width: 1.5em;
+    }
+
+    .mobile-menu {
+      font-size: 1.7rem;
+    }
+
+    nav {
+      display: none;
+    }
+  }
 }
