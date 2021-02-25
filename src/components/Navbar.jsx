@@ -15,7 +15,7 @@ const Navbar = () => {
   });
 
   const handleScrolled = () => {
-    if (window.scrollY > 150) {
+    if (window.scrollY > 50) {
       dispatch(showScrolled());
     } else {
       dispatch(hideScrolled());

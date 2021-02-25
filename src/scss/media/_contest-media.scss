@@ -1,16 +1,12 @@
 @media (min-width: 400px) {
-  .contest {
-    .container {
-      padding-top: 5em;
-    }
+  h1.contest-title {
+    padding-top: 2.7em;
   }
 }
 
 @media (min-width: 700px) {
-  .contest {
-    .container {
-      padding-top: 7em;
-    }
+  h1.contest-title {
+    padding-top: 3.5em;
   }
 }
 

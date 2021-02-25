@@ -1,0 +1,22 @@
+/* MOBILE FIRST */
+
+.footer {
+  font-family: "Archivo Black";
+  padding: 2em;
+  margin-top: 1em;
+  background-color: $dark-color;
+  text-transform: uppercase;
+
+  .container {
+    color: $medium-color;
+
+    a {
+      color: $light-color;
+      transition: 0.3s;
+
+      &:hover {
+        color: $main-color;
+      }
+    }
+  }
+}
