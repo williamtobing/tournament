@@ -1,5 +1,5 @@
-import shadow from "../assets/images/grad.png";
-import character from "../assets/images/pubg-character.png";
+import shadow from "../assets/images/grad.webp";
+import character from "../assets/images/pubg-character.webp";
 
 const Hero = () => {
   return (
