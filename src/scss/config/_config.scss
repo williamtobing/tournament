@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+
 // Variables
 $main-color: #0082f3;
 $light-color: white;
@@ -8,3 +11,5 @@ $main-bg: black;
 $bg-image: url("../../assets//images/bg-image.webp");
 
 $transparent: rgba(0, 0, 0, 0);
+
+@import "./base";

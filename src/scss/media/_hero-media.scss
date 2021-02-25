@@ -1,16 +1,4 @@
 @media (min-width: 400px) {
-  .navbar {
-    .container {
-      img {
-        max-width: 2em;
-      }
-
-      .mobile-menu {
-        font-size: 2em;
-      }
-    }
-  }
-
   .hero {
     img.character {
       width: 50%;
@@ -35,45 +23,6 @@
 }
 
 @media (min-width: 700px) {
-  .navbar {
-    padding: 1.5em 2.5em;
-
-    .container {
-      width: 100%;
-
-      img {
-        max-width: 2.5em;
-      }
-
-      .mobile-menu,
-      .mobile-menu-exit {
-        display: none;
-      }
-
-      nav {
-        display: flex;
-        justify-content: flex-end;
-        background: none;
-        position: unset;
-        height: auto;
-        width: 100%;
-        padding: 0;
-
-        ul {
-          margin: 0;
-          display: flex;
-        }
-
-        li {
-          a {
-            padding: 0 0 0.5em 0;
-            margin-left: 2em;
-          }
-        }
-      }
-    }
-  }
-
   .hero {
     height: 100vh;
 
