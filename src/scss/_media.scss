@@ -77,6 +77,11 @@
   .hero {
     height: 100vh;
 
+    img.circle {
+      width: 100%;
+      right: -10%;
+    }
+
     img.bottom-circle {
       width: 350px;
     }
@@ -109,6 +114,11 @@
 
 @media (min-width: 1280px) {
   .hero {
+    img.circle {
+      width: 100%;
+      right: 5%;
+    }
+
     img.bottom-circle {
       width: 525px;
     }
