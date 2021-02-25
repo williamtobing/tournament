@@ -1,7 +1,11 @@
+import Cards from "./Cards";
+
 const Contest = () => {
   return (
     <div className="contest">
-      <h1 style={{ padding: "100px" }}>CONTEST</h1>
+      <div className="container">
+        <Cards />
+      </div>
     </div>
   );
 };

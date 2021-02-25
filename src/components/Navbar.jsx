@@ -1,4 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 import { showNav, hideNav } from "../actions";
 import { IoIosMenu, IoIosClose } from "react-icons/io";
 import logo from "../assets/images/zemestagame-logo.png";
@@ -13,9 +14,7 @@ const Navbar = () => {
     dispatch(showNav());
   };
 
-  const hideNavbar = (e) => {
-    e.preventDefault();
-
+  const hideNavbar = () => {
     dispatch(hideNav());
   };
 
@@ -33,14 +32,14 @@ const Navbar = () => {
 
           <ul>
             <li>
-              <a href="/" onClick={hideNavbar}>
+              <Link to="/" onClick={hideNavbar}>
                 HOME
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/" onClick={hideNavbar}>
+              <Link to="/contest" onClick={hideNavbar}>
                 CONTEST
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

@@ -2,6 +2,7 @@
 
 .navbar {
   background: $transparent;
+  // background-color: $dark-color;
   padding: 1em;
   position: fixed;
   z-index: 999;
@@ -21,12 +22,13 @@
       font-size: 1.7em;
       user-select: none;
       cursor: pointer;
+      margin: auto 0;
     }
 
     .mobile-menu-exit {
       float: right;
       font-size: 3em;
-      margin-top: -0.1em;
+      margin-top: -1px;
       margin-right: 0.1em;
       user-select: none;
       cursor: pointer;
