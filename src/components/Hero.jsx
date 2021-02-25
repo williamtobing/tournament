@@ -22,8 +22,10 @@ const Hero = () => {
 
       <img className="bottom-circle" src={bottomCircle} alt="" />
       <div className="date">
-        <p>REGISTRATION</p>
-        <p className="time">TBA</p>
+        <Fade bottom>
+          <p>REGISTRATION</p>
+          <p className="time">TBA</p>
+        </Fade>
       </div>
       <Fade right>
         <img className="character" src={character} alt="" />
