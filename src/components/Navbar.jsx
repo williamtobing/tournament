@@ -35,9 +35,9 @@ const Navbar = () => {
   return (
     <div className={scrolled ? "navbar scrolled" : "navbar"}>
       <div className="container">
-        <a className="logo" href="/">
+        <Link className="logo" to="/">
           <img src={logo} alt="" />
-        </a>
+        </Link>
 
         <IoIosMenu className="mobile-menu" onClick={showNavbar} />
 
