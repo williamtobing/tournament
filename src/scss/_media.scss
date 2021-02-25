@@ -138,10 +138,19 @@
     .date {
       bottom: 12%;
     }
+
+    img.shadow-up {
+      display: none;
+    }
   }
 }
 
-@media (min-width: 2560px) {
+@media (min-width: 2400px) {
+  .hero {
+    img.shadow-up {
+      display: inline;
+    }
+  }
 }
 
 // Landscape
