@@ -30,7 +30,7 @@ ul {
 }
 
 .container {
-  width: 95%;
+  max-width: 1440px;
 }
 
 .navbar {
@@ -115,6 +115,7 @@ ul {
   background-size: cover;
   background-position: center;
   height: 80vh;
+  max-height: 1000px;
   overflow: hidden;
 
   img {
@@ -122,17 +123,43 @@ ul {
     width: 100%;
     bottom: 0;
     left: 0;
+    user-select: none;
+  }
+
+  img.bottom-circle {
+    z-index: 4;
+    width: 280px;
   }
 
   img.character {
-    z-index: 1;
+    z-index: 2;
     width: 110%;
+  }
+
+  img.shadow-up {
+    transform: rotate(180deg);
+    z-index: 3;
+    width: 100%;
+    top: 0;
+    left: 0;
     user-select: none;
   }
 
-  img.shadow {
-    z-index: 2;
-    user-select: none;
+  img.shadow-down {
+    z-index: 999;
+  }
+
+  .date {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    z-index: 5;
+    width: 280px;
+    font-size: 1em;
+
+    p.time {
+      font-weight: bold;
+    }
   }
 
   .container {
@@ -142,7 +169,7 @@ ul {
       top: 30%;
       left: 50%;
       transform: translate(-50%, -50%);
-      z-index: 3;
+      z-index: 5;
 
       h1 {
         font-size: 20vw;
@@ -150,6 +177,14 @@ ul {
 
       h2 {
         font-size: 7vw;
+      }
+
+      h2.text-left {
+        text-align: left;
+      }
+
+      h2.text-right {
+        text-align: right;
       }
     }
   }

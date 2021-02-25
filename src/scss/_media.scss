@@ -21,6 +21,14 @@
     .container {
       .event {
         top: 50%;
+
+        h1 {
+          font-size: 15vw;
+        }
+
+        h2 {
+          font-size: 5vw;
+        }
       }
     }
   }
@@ -69,6 +77,16 @@
   .hero {
     height: 100vh;
 
+    img.bottom-circle {
+      width: 350px;
+    }
+
+    .date {
+      bottom: 10%;
+      width: 350px;
+      font-size: 1.5em;
+    }
+
     img.character {
       width: 50%;
       right: -100px;
@@ -90,7 +108,42 @@
 }
 
 @media (min-width: 1280px) {
+  .hero {
+    img.bottom-circle {
+      width: 525px;
+    }
+
+    .date {
+      bottom: 15%;
+      width: 525px;
+      font-size: 2em;
+    }
+
+    .container {
+      .event {
+        top: 45%;
+        left: 45%;
+
+        h1 {
+          font-size: 12vw;
+          line-height: 1em;
+        }
+      }
+    }
+  }
 }
+
+@media (min-width: 1440px) {
+  .hero {
+    .date {
+      bottom: 12%;
+    }
+  }
+}
+
+@media (min-width: 2560px) {
+}
+
 // Landscape
 @media (max-height: 580px) {
 }
