@@ -9,3 +9,15 @@ export const hideNav = () => {
     type: "HIDE_NAV",
   };
 };
+
+export const showScrolled = () => {
+  return {
+    type: "SHOW_SCROLLED_NAV",
+  };
+};
+
+export const hideScrolled = () => {
+  return {
+    type: "HIDE_SCROLLED_NAV",
+  };
+};

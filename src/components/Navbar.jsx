@@ -1,12 +1,26 @@
+import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import { showNav, hideNav } from "../actions";
+import { showNav, hideNav, showScrolled, hideScrolled } from "../actions";
 import { IoIosMenu, IoIosClose } from "react-icons/io";
 import logo from "../assets/images/zemestagame-logo.png";
 
 const Navbar = () => {
   const nav = useSelector((state) => state.nav);
+  const scrolled = useSelector((state) => state.scrolled);
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScrolled);
+  });
+
+  const handleScrolled = () => {
+    if (window.scrollY > 150) {
+      dispatch(showScrolled());
+    } else {
+      dispatch(hideScrolled());
+    }
+  };
 
   const showNavbar = (e) => {
     e.preventDefault();
@@ -19,7 +33,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar">
+    <div className={scrolled ? "navbar scrolled" : "navbar"}>
       <div className="container">
         <a className="logo" href="/">
           <img src={logo} alt="" />
@@ -27,7 +41,7 @@ const Navbar = () => {
 
         <IoIosMenu className="mobile-menu" onClick={showNavbar} />
 
-        <nav className={nav ? "active" : "menu-btn"}>
+        <nav className={`${nav ? "active" : "menu-btn"} `}>
           <IoIosClose className="mobile-menu-exit" onClick={hideNavbar} />
 
           <ul>
