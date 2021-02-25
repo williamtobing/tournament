@@ -89,7 +89,7 @@ ul {
           transition-duration: 0.3s;
 
           &:hover {
-            color: $main-color;
+            border-bottom: 0.2rem solid $main-color;
           }
         }
       }
@@ -127,10 +127,12 @@ ul {
   img.character {
     z-index: 1;
     width: 110%;
+    user-select: none;
   }
 
   img.shadow {
     z-index: 2;
+    user-select: none;
   }
 
   .container {
