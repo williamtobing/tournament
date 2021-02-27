@@ -109,6 +109,13 @@
     img.shadow-up {
       display: inline;
     }
+
+    .container {
+      .event {
+        top: 50%;
+        left: 50%;
+      }
+    }
   }
 }
 
