@@ -16,7 +16,6 @@ const Cards = () => {
       <Card />
       <Card />
       <Card />
-      <Card />
     </Fade>
   );
 };
