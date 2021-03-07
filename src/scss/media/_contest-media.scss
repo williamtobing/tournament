@@ -8,9 +8,24 @@
   h1.contest-title {
     padding-top: 3.5em;
   }
+
+  .contest {
+    .container {
+      display: grid;
+      align-items: center;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 }
 
 @media (min-width: 1280px) {
+  .contest {
+    .container {
+      display: grid;
+      align-items: center;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
 }
 
 @media (min-width: 1440px) {
