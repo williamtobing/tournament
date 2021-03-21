@@ -1,23 +1,15 @@
-import Fade from "react-reveal";
 import Card from "./Card";
+import Fade from "react-reveal";
 
-const Cards = () => {
+const Cards = ({ tournaments }) => {
   return (
-    <Fade>
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-    </Fade>
+    <>
+      {tournaments.map((tournament) => (
+        <Fade>
+          <Card key={tournament.game_id} tournament={tournament} />
+        </Fade>
+      ))}
+    </>
   );
 };
 

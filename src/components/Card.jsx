@@ -2,7 +2,7 @@ import card from "../assets/images/tournament.webp";
 import author from "../assets/images/zemestagame-logo.png";
 // import author from "../assets/images/bg-image.webp";
 
-const Card = () => {
+const Card = ({ tournament }) => {
   return (
     <div className="card">
       <div className="card-header animated-bg">
@@ -11,11 +11,13 @@ const Card = () => {
 
       <div className="card-content">
         <h3 className="card-title animated-bg animated-bg-text">
-          Lorem ipsum dolor sit amet
+          {tournament.title}
         </h3>
         <p className="card-excerpt">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-          perferendis
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
+          deleniti! Quibusdam porro ratione, non aspernatur fuga nemo quisquam
+          iusto! Quibusdam excepturi sit cumque sequi tempora modi molestiae
+          adipisci, commodi placeat.
           <span className="animated-bg animated-bg-text">&nbsp;</span>
           <span className="animated-bg animated-bg-text">&nbsp;</span>
           <span className="animated-bg animated-bg-text">&nbsp;</span>
